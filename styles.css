@@ -1,0 +1,295 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+img{
+    width: 100%;
+    aspect-ratio: 2/2;
+}
+
+header{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100vw;
+    gap:10px;
+    background-color: rgb(0, 89, 162);
+
+}
+
+header nav{
+    width: 100%;
+}
+header ul{
+    list-style-type: none;
+    gap: 2%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    background-color: rgb(228, 228, 228);
+    padding: 2%;
+
+}
+
+li a{
+    text-decoration: none;
+    color: black;
+    
+}
+
+.hero{
+    width: 100%;
+    background-image: url("images/hero-bg.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: right;
+    height: 70vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.hero-content{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    width: 100%;
+    color: black;
+}
+
+
+
+.hero-content button{
+    background-color: white;
+    color: black;
+    border: 0px;
+    padding: 2%;
+    border-radius: 10px;
+}
+
+.hero-content h2{
+    font-weight: bolder;
+    font-size: 2rem;
+    background-color: rgba(255, 255, 255, 0.725);
+    
+    padding: 3%;
+    border-radius: 5px;
+}
+
+.products{
+    display: flex;
+    padding-top: 10%;
+    flex-direction: column;
+    align-items: center;
+}
+
+.products h2{
+    font-size: 2rem;
+}
+
+.products p{
+    font-size: 1.2rem;
+    padding-bottom: 10%;
+}
+
+.products-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+    width: 100%;
+}
+
+.product{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    width: 90%;
+    background-color: rgb(0, 89, 162);
+    color: white;
+    border-radius: 2px;
+    box-shadow: 0px 0px 5px 1px rgb(222, 221, 221);
+    padding: 0;
+
+
+}
+
+.product p{
+    padding-bottom: 0;
+}
+
+
+.product button{
+    padding: 3% 7%;
+    background-color: white;
+    font-size: 1.4rem;
+    border-radius: 10px;
+    border: 0;
+    margin-bottom: 4%;
+
+}
+
+footer{
+    background-color: rgb(0, 89, 162);
+    color: white;
+    height: 5vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+    header{
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+        gap:10px;
+        color: white;
+    }
+
+    header h1{
+        width: 30%;
+        padding: 2%
+    }
+    
+    header nav{
+        width: 70%;
+    }
+    header ul{
+        list-style-type: none;
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+        gap: 10px;
+        padding-right: 5%;
+        background-color: unset;
+    }
+
+    header a{
+        color:white;
+    }
+
+
+    .hero-content button{
+        padding: 1.5%;
+    }
+
+
+    
+.products{
+    display: flex;
+    padding:2% 10%;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.products h2{
+    font-size: 2rem;
+}
+
+.products p{
+    font-size: 1.2rem;
+    padding-bottom: 10%;
+}
+
+.products-container{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+    width: 100%;
+}
+
+.product{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    width: 40%;
+    background-color: rgb(0, 89, 162);
+    color: white;
+    border-radius: 2px;
+    box-shadow: 0px 0px 5px 1px rgb(222, 221, 221);
+    padding: 0;
+
+}
+
+.product p{
+    padding-bottom: 0;
+    text-align: center;
+}
+
+
+.product button{
+    padding: 3% 7%;
+    background-color: white;
+    font-size: 1.4rem;
+    border-radius: 10px;
+    border: 0;
+    margin-bottom: 4%;
+}
+
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+
+    .hero-content button{
+        padding: 1%;
+    }
+
+    .hero-content h2{
+        padding: 2%;
+    }
+
+
+.products p{
+    font-size: 1.2rem;
+    padding-bottom: 5%;
+}
+
+
+.product{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    width: 20%;
+    background-color: rgb(0, 89, 162);
+    color: white;
+    border-radius: 2px;
+    box-shadow: 0px 0px 5px 1px rgb(222, 221, 221);
+    padding: 0;
+}
+
+.product p{
+    padding-bottom: 0;
+    text-align: center;
+}
+
+
+.product button{
+    padding: 3% 7%;
+    background-color: white;
+    color: black;
+    font-size: 1.4rem;
+    border-radius: 10px;
+    border: 0;
+    margin-bottom: 4%;
+}
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+
+}
